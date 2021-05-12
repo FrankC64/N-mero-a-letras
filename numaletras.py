@@ -77,8 +77,6 @@ def numero_a_letras(numero, un=False):
             numero = 0 # Cierre del bucle
 
         elif (numero > 15 and numero <= 99):
-            """1 devuelve "ún" y 0 devuelve "un", esto es cuando se
-            evalúa la condición de si es una tupla."""
 
             if (numero % 10 == 0):
                 salida = " ".join(
