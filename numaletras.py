@@ -88,7 +88,7 @@ def numero_a_letras(numero, un=False):
                 da como resultado un número entre 2 y 9, que será el
                 desplazamiento para obtener la cadena de texto correcta."""
             elif (numero < 30):
-                temp_n = 1 if (numero % 10 == 1 and un) else 0
+                temp_n = 1 if (numero == 21 and un or numero != 21) else 0
                 
                 salida = " ".join(
                     [salida, __lista_de_conectores[(numero//10)-1] 
@@ -165,4 +165,6 @@ def numero_a_letras(numero, un=False):
     return salida.strip(' ').rstrip(' ')
 
 if __name__ == '__main__':
-    print(numero_a_letras(1221921))
+    print(numero_a_letras(31000))
+    
+    
