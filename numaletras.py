@@ -97,7 +97,6 @@ def numero_a_letras(numero, un=False):
             else:
                 temp_n = 2 if (numero % 10 == 1 and un) else 0
 
-                print(numero, temp_n)
                 salida = " ".join(
                             [salida, 
                             __lista_de_numeros[(numero//10)+13], "y"])
